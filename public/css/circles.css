@@ -1,0 +1,39 @@
+.point-label {
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    pointer-events: none;
+}
+main {
+    position: relative;
+    padding: 50px;
+}
+.point-tooltip {
+    color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    width: 250px;
+    position: absolute;
+    pointer-events: none;
+    background-color: #5a5151e7;
+    border-radius: 15px;
+}
+
+.filled {
+    fill: url(#mainGradient);
+}
+
+.point-tooltip-scale {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cost-index {
+    transition-delay: 0.1;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(0.60, 0.4, 0.50, 1.4);
+    transition-property: all;
+}
